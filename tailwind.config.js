@@ -81,6 +81,21 @@ export default {
         "benefit-card-5": "url(assets/benefits/card-5.svg)",
         "benefit-card-6": "url(assets/benefits/card-6.svg)",
       },
+      animation: {
+        "infinite-scroll": "infinite-scroll 20s linear infinite",
+        "infinite-scroll2":
+          "infinite-scroll2 20s linear infinite delay-[10000]",
+      },
+      keyframes: {
+        "infinite-scroll": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-100%)" },
+        },
+        "infinite-scroll2": {
+          from: { transform: "translateX(0)" },
+          to: { transform: "translateX(-200%)" },
+        },
+      },
     },
   },
   plugins: [
